@@ -1,2 +1,2 @@
 # Travel
-Used to support Laura's travel planning activities
+Supports Laura's travel planning activities
