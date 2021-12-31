@@ -6,7 +6,7 @@
 ##
 ################################################################################
 
-# Connecting to the 
+# Connecting to the Travel_PROD database
 ## Defines geodatabase location; to be used in all scripts
 def getGDBconnection():
   import os
