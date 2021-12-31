@@ -26,5 +26,5 @@ def formatFileDate(in_date):
   return in_date.strftime("%Y_%m_%d")
 
 # ???
-#def compare_geometry():
+#def updateGeometry():
 #  return "IDK"
