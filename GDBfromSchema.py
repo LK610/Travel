@@ -24,7 +24,8 @@ xlsx_file = r"Data_Dictionary.xlsx"
 xlsx = os.path.join(xlsx_fldr, xlsx_file)
 
 tables = pd.read_excel(xlsx, sheet_name='Tables')
-print(tables)
+for index, row in tables.iterrows():
+    print(row['Name', 'Geometry', 'HasM', 'HasZ'])
 
 #arcpy.management.CreateFeatureclass(wrkspc, out_name, {geometry_type}, None, {has_m}, {has_z}, sr)
 #arcpy.management.CreateTable(wrkspc, out_name, None, '', '')
