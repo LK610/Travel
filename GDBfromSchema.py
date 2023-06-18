@@ -23,9 +23,17 @@ xlsx_fldr = r"C:\Users\Laura\Documents\Keepsakes\Travel\0_MetadataInstructions"
 xlsx_file = r"Data_Dictionary.xlsx"
 xlsx = os.path.join(xlsx_fldr, xlsx_file)
 
+# CREATE TABLES
 tables = pd.read_excel(xlsx, sheet_name='Tables')
-for index, row in tables.iterrows():
-    print(row['Name', 'Geometry', 'HasM', 'HasZ'])
 
-#arcpy.management.CreateFeatureclass(wrkspc, out_name, {geometry_type}, None, {has_m}, {has_z}, sr)
-#arcpy.management.CreateTable(wrkspc, out_name, None, '', '')
+for index, row in tables.iterrows():
+
+    out_name = row['Name']
+    geometry_type = row['Geometry']
+    has_m = row['HasM']
+    has_z = row['HasZ']
+
+    if geometry_type == 'TABLE':
+        arcpy.management.CreateTable(wrkspc, out_name, None, '', '')
+    else:
+        arcpy.management.CreateFeatureclass(wrkspc, out_name, geometry_type, None, has_m, has_z, sr)
