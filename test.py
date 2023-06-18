@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 
 #------
 trip_title = 'Low Countries Train Tour'
+url = r"https://www.google.com/maps/place/Trinity+College/@52.2069577,0.1130816,17z/data=!3m1!4b1!4m5!3m4!1s0x47d870bbe0dcd367:0xe841058978d4a675!8m2!3d52.2069577!4d0.1130816"
 currency_values = tm.getDomainValues("Currency")
 print(currency_values)
 

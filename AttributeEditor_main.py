@@ -1,22 +1,35 @@
-#"C:\Users\Laura\Documents\Envs\Python envs\arcgispro-py3-clone\python.exe" –m PyQt5.uic.pyuic "C:\Users\Laura\Documents\Keepsakes\Travel\TravelMaster\Travel_GitHub\AttributeEditor.ui" –o AttributeEditor_ui.py
+## Print all conda environments
+#C:\Users\Laura\anaconda3\Scripts\conda.exe info --envs
+
+## Set conda environment
+#C:/Users/Laura/anaconda3/Scripts/activate "C:\Users\Laura\Documents\Envs\Python envs\arcgispro-py3-clone"
+
+## Convert ui to Python file
+#"C:\Users\Laura\Documents\Envs\Python envs\arcgispro-py3-clone\python.exe" –m PyQt5.uic.pyuic "C:\AttributeEditor.ui" –o AttributeEditor_ui.py
+#"C:\Users\Laura\Documents\Envs\Python envs\arcgispro-py3-clone\python.exe" –m PyQt5.uic.pyuic "C:\AttributeEditor.ui" –o "C:\AttributeEditor_ui.py"
 
 # https://www.e-education.psu.edu/geog489/l2_p5.html
 # https://www.e-education.psu.edu/geog489/node/2226
 # https://tereshenkov.wordpress.com/2017/11/26/developing-python-gui-in-arcgis-pro-with-pyqt/
 # https://stackoverflow.com/questions/41381660/pyqt5-pyuic-module-error
 
+#* Important 
+#! Alert
+#? Question
+# TODO
+
 #===============================================
 # Import required resources
 #===============================================
 
 # Import packages
-# import sys
+import sys
  
-# from PyQt5.QtWidgets import QApplication, QMainWindow, QStyle, QFileDialog, QMessageBox
-# try:
-#     from PyQt5.QtWebEngineWidgets import QWebEngineView as WebMapWidget
-# except:
-#     from PyQt5.QtWebKitWidgets import QWebView as WebMapWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow, QStyle, QFileDialog, QMessageBox
+try:
+    from PyQt5.QtWebEngineWidgets import QWebEngineView as WebMapWidget
+except:
+    from PyQt5.QtWebKitWidgets import QWebView as WebMapWidget
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
