@@ -37,3 +37,21 @@ for index, row in tables.iterrows():
         arcpy.management.CreateTable(wrkspc, out_name, None, '', '')
     else:
         arcpy.management.CreateFeatureclass(wrkspc, out_name, geometry_type, None, has_m, has_z, sr)
+
+# CREATE DOMAINS
+domains = pd.read_excel(xlsx, sheet_name='Domains')
+
+for index, row in domains.iterrows():
+
+    domain_name = row['Name']
+    domain_description = row['Description']
+    field_type = row['FieldType']
+    domain_type = row['DomainType']
+    split_policy = row['SplitPolicy']
+    merge_policy = row['MergePolicy']
+
+    arcpy.management.CreateDomain(wrkspc, domain_name, domain_description, field_type, domain_type, split_policy, merge_policy)
+
+# CREATE DOMAIN VALUES
+
+#arcpy.management.AddCodedValueToDomain(in_workspace, domain_name, code, code_description)
