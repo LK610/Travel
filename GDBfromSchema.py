@@ -67,3 +67,21 @@ for index, row in domains.iterrows():
 
     arcpy.management.CreateDomain(wrkspc, domain_name, domain_description, field_type, domain_type, split_policy, merge_policy)
     logging.info('%s domain created in the geodatabase', domain_name)
+
+# CREATE DOMAIN VALUES
+domainValues = pd.read_excel(xlsx, sheet_name='DomainValues')
+domainValues = domainValues.merge(domains, how='inner')
+
+uniqueDomains = domainValues.Name.unique().tolist()
+
+for u in uniqueDomains:
+    for index, row in domainValues.iterrows():
+        if row['Name'] == u:
+            if row['DomainType'] == 'CODED':
+                arcpy.management.AddCodedValueToDomain(wrkspc, u, row['Code'], row['ValueDescription'])
+            else:
+                arcpy.management.SetValueForRangeDomain(wrkspc, u, row['MinValue'], row['MaxValue'])
+        else:
+            pass
+
+    logging.info('%s domain values added in the geodatabase', u)
