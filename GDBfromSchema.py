@@ -52,6 +52,8 @@ for index, row in tables.iterrows():
     else:
         arcpy.management.CreateFeatureclass(wrkspc, out_name, geometry_type, None, has_m, has_z, sr)
         logging.info('%s feature class created in the geodatabase', out_name)
+    
+    logging.info('%s table created in the geodatabase', out_name)
 
 # CREATE DOMAINS
 domains = pd.read_excel(xlsx, sheet_name='Domains')
