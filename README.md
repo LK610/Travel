@@ -8,7 +8,7 @@
 <h3 align="center">Laura's Travel Planning Scripts & Tools</h3>
 
   <p align="center">
-    Supports Laura's travel planning process with help from ArcGIS Pro
+    Supports Laura's travel planning process with help from ESRI's desktop and online software.
     <br />
     <a href="https://github.com/LK610/Travel.git"><strong>Explore the docs »</strong></a>
     <br />
@@ -47,17 +47,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following:
+Laura wants to take productive vacations to Europe. She just didn't think she'd need to learn Python to do it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
-[![Bootstrap][Bootstrap.com]][Bootstrap-url]</br>
 [![Python][Python.com]][Python-url]
+[![ArcGIS Pro][https://www.esriuk.com/content/dam/esrisites/en-us/arcgis/capabilities/data-management/data-management-2020-update/assets/capabilities-data-managment-card-arcgis-pro.jpg]][https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview]
+[![ArcGIS Online][https://www.esriuk.com/content/dam/esrisites/en-us/arcgis/capabilities/data-management/data-management-2020-update/assets/capabilities-data-managment-card-arcgis-online.jpg]][https://www.esri.com/en-us/arcgis/products/arcgis-online/overview]
+Authenic human tears
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,61 +63,59 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Travel_Module - defines frequently used functions for the travel project
+Just don't. Take a cruise like a normal person.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* sys
-  ```sh
-  npm install npm@latest -g
-  ```
-* PyQT5
-* selenium
+Install packages using the ArcGIS Pro built-in package manager
 * arcpy
+* pandas
 * os
 * datetime
+* PyQT5
+* selenium
 
 ### Files
 
-* 
+* Travel_Module - defines frequently used functions for the project
+* MakeNewGDB.ipynb - Generates an empty geodatabase according to the data dictionary spreadsheet
+* MakeReports.ipynb - Truncates and appends data into the already established 'Reporting' database to connect to layouts and reports styled in ArcGIS Pro
+* GoogleScraping.ipynb - Rudimentary script to compile Regions attribute data by scraping Google maps
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Pity the fool attempting to repurpose this mess.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Validate the data model
+    - [ ] Script and populate Reporting database to generate Safety Cards
+    - [ ] Script and populate Reporting database to generate Itinerary for Emergency Contacts
+    - [ ] Script and populate Reporting database to generate the Daily Itinerary Summaries
+    - [ ] Script and populate Reporting database to generate Google calendar events in place of the detailed itineraries
+- [ ] Migrate database to Production
+    - [ ] Publish geodatabase schema to Production
+    - [ ] Move and augment data as needed
+    - [ ] Style layers and save styles within the Pro project
+- [ ] Configure data collection via ArcGIS Online
+    - [ ] Publish necessary datasets
+    - [ ] Configure editing apps
+    - [ ] Add custom functionality, if necessary
 
 See the [open issues](https://github.com/LK610/Travel.git/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -129,27 +125,25 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Place all blame directly on Laura.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
 
-Questions? Contact me at: lmmk81914@gmail.com
+Do you have questions, like 'Why?', 'How did you do that?' and 'Are you a masochist?'
+
+Me too! 
+
+Contact me at: lmmk81914@gmail.com (*Good* answers not guaranteed)
 
 Project Link: [https://github.com/LK610/Travel.git](https://github.com/LK610/Travel.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
