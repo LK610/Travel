@@ -52,9 +52,9 @@ Laura wants to take productive vacations to Europe. She just didn't think she'd 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
-[![Python][Python.com]][Python-url]
-[![ArcGIS Pro][https://www.esriuk.com/content/dam/esrisites/en-us/arcgis/capabilities/data-management/data-management-2020-update/assets/capabilities-data-managment-card-arcgis-pro.jpg]][https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview]
-[![ArcGIS Online][https://www.esriuk.com/content/dam/esrisites/en-us/arcgis/capabilities/data-management/data-management-2020-update/assets/capabilities-data-managment-card-arcgis-online.jpg]][https://www.esri.com/en-us/arcgis/products/arcgis-online/overview]
+[![Python][Python.com]][Python-url]<br>
+[![ArcGIS Pro](https://www.esriuk.com/content/dam/esrisites/en-us/arcgis/capabilities/data-management/data-management-2020-update/assets/capabilities-data-managment-card-arcgis-pro.jpg)](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview)<br>
+[![ArcGIS Online](https://www.esriuk.com/content/dam/esrisites/en-us/arcgis/capabilities/data-management/data-management-2020-update/assets/capabilities-data-managment-card-arcgis-online.jpg)](https://www.esri.com/en-us/arcgis/products/arcgis-online/overview)<br>
 Authenic human tears
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -148,9 +148,7 @@ Project Link: [https://github.com/LK610/Travel.git](https://github.com/LK610/Tra
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* Many people in my life are filthy enablers
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
